@@ -9,7 +9,10 @@ app.use(bodyParser.json())
 app.use(cors()); // allow all
 
 
-
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+}
+)
 //userRouter
 app.use('/api', userRouter);
 
