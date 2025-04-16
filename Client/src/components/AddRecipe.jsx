@@ -59,7 +59,6 @@ const AddRecipe = () => {
       imgurl
     );
 
-    // console.log("addrecipe " ,result)
     toast.success(result.data.message, {
       position: "top-right",
       autoClose: 1000,
@@ -71,7 +70,6 @@ const AddRecipe = () => {
       theme: "dark",
       transition: Bounce,
     });
-    // console.log(result.data)
     setTimeout(() => {
       navigate("/");
     }, 1500);

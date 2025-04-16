@@ -7,11 +7,10 @@ const FetchRecipeById = ({ id }) => {
   const { getRecipeById } = useContext(AppContext);
   const [recipe, setrecipe] = useState("");
   
-  //   console.log(id )
+  
   useEffect(() => {
     const fetchRecipe = async (id) => {
       const result = await getRecipeById(id);
-      //   console.log("recipe by Id ", result);
       setrecipe(result.data.recipe);
     };
 
