@@ -6,10 +6,8 @@ import recipeRouter from "./routes/recipe.js"
 import cors from "cors"
 const app = express()
 app.use(bodyParser.json())
-app.use(cors({
-  origin: "http://localhost:5173", // your frontend URL
-  credentials: true // if you're using cookies or sessions
-}));
+app.use(cors()); // allow all
+
 
 
 //userRouter
