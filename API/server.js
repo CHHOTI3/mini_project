@@ -6,7 +6,10 @@ import recipeRouter from "./routes/recipe.js"
 import cors from "cors"
 const app = express()
 app.use(bodyParser.json())
-app.use(cors()); // allow all
+app.use(cors({
+  origin: 'https://poonam-recipe-share.netlify.app',
+  credentials: true
+}));
 
 
 app.get('/', (req, res) => {
